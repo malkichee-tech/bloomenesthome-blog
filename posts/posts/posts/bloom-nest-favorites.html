@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BloomNestHome Favorites: Our Most-Loved Products | BloomNestHome</title>
+  <meta name="description" content="Discover our most-loved home decor picks from BloomNestHome. Handpicked candles, cozy textiles, and beautiful pieces to transform your space."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    .post-hero {
+      background: linear-gradient(135deg, #FDF8F0 0%, #f5ede0 100%);
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+    .post-hero .category-badge {
+      display: inline-block;
+      background: #6B4F3A;
+      color: white;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .post-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: #6B4F3A;
+      max-width: 750px;
+      margin: 0 auto 20px;
+      line-height: 1.3;
+    }
+    .post-meta {
+      color: #999;
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+    .post-meta span { margin: 0 10px; }
+    .post-featured-img {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      background: linear-gradient(135deg, #C9867C, #6B4F3A);
+      border-radius: 16px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+    }
+    .post-content-wrap {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .post-content-wrap p {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: #555;
+      margin-bottom: 24px;
+    }
+    .post-content-wrap h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #6B4F3A;
+      margin: 50px 0 20px;
+    }
+    .post-content-wrap h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: #8A9E7E;
+      margin: 30px 0 12px;
+    }
+    .tip-box {
+      background: #FDF8F0;
+      border-left: 4px solid #6B4F3A;
+      padding: 24px 28px;
+      border-radius: 0 12px 12px 0;
+      margin: 36px 0;
+    }
+    .tip-box p { margin: 0; color: #6B4F3A; font-style: italic; }
+    .product-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 24px;
+      margin: 40px 0;
+    }
+    .product-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover { transform: translateY(-5px); }
+    .product-card-img {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+    }
+    .product-card-img.green { background: linear-gradient(135deg, #8A9E7E, #6B8F5E); }
+    .product-card-img.rose { background: linear-gradient(135deg, #C9867C, #b06b61); }
+    .product-card-img.brown { background: linear-gradient(135deg, #6B4F3A, #8a6248); }
+    .product-card-img.cream { background: linear-gradient(135deg, #e8d5b8, #d4b896); }
+    .product-card-body { padding: 20px; }
+    .product-card-body h4 {
+      font-family: 'Playfair Display', serif;
+      color: #6B4F3A;
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+    }
+    .product-card-body p {
+      font-size: 0.9rem;
+      color: #888;
+      margin: 0 0 16px;
+      line-height: 1.6;
+    }
+    .product-card-body a {
+      display: inline-block;
+      background: #C9867C;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-family: 'Lato', sans-serif;
+      transition: background 0.3s;
+    }
+    .product-card-body a:hover { background: #b06b61; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 36px 0;
+    }
+    .why-item {
+      text-align: center;
+      padding: 28px 20px;
+      background: #FDF8F0;
+      border-radius: 14px;
+    }
+    .why-item .icon { font-size: 2.5rem; margin-bottom: 14px; }
+    .why-item h4 {
+      font-family: 'Playfair Display', serif;
+      color: #6B4F3A;
+      margin: 0 0 8px;
+    }
+    .why-item p { font-size: 0.9rem; color: #888; margin: 0; line-height: 1.6; }
+    .cta-section {
+      background: linear-gradient(135deg, #6B4F3A, #8a6248);
+      border-radius: 20px;
+      padding: 50px 40px;
+      text-align: center;
+      margin: 50px 0;
+      color: white;
+    }
+    .cta-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin: 0 0 16px;
+      color: white;
+    }
+    .cta-section p {
+      color: rgba(255,255,255,0.85);
+      margin: 0 0 28px;
+      font-size: 1.05rem;
+    }
+    .cta-section a {
+      display: inline-block;
+      background: #C9867C;
+      color: white;
+      padding: 14px 36px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .cta-section a:hover { transform: translateY(-2px); background: #b06b61; }
+    .post-nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 0 40px;
+      padding: 30px 0;
+      border-top: 1px solid #eee;
+    }
+    .post-nav a {
+      color: #8A9E7E;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.95rem;
+    }
+    .post-nav a:hover { color: #C9867C; }
+    .back-to-blog {
+      display: inline-block;
+      margin-bottom: 40px;
+      color: #8A9E7E;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.95rem;
+    }
+    .back-to-blog:hover { color: #C9867C; }
+    @media(max-width:600px){
+      .post-hero h1 { font-size: 1.9rem; }
+      .cta-section { padding: 36px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">🌸 BloomNestHome</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="https://www.etsy.com/shop/BloomNestHome" target="_blank" class="nav-etsy">Shop on Etsy</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="post-hero">
+    <span class="category-badge">Shop Favorites</span>
+    <h1>BloomNestHome Favorites: Our Most-Loved Products</h1>
+    <div class="post-meta">
+      <span>🌿 By BloomNestHome</span>
+      <span>📅 March 2024</span>
+      <span>⏱ 4 min read</span>
+    </div>
+    <div class="post-featured-img">🌸</div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <div class="post-content-wrap">
+    <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+
+    <p>
+      Every item in our Etsy shop is chosen with love and intention — but some pieces hold a special place in our hearts. These are the products our customers return to again and again, the ones that consistently bring warmth and beauty into homes around the world. Today, we're pulling back the curtain on our absolute favorites and the stories behind them.
+    </p>
+
+    <div class="tip-box">
+      <p>🌸 <strong>A note from us:</strong> Every product in BloomNestHome is handpicked to bring a little more coziness and beauty into your everyday life. We believe home decor should feel like a warm hug.</p>
+    </div>
+
+    <h2>Our Customer Favorites</h2>
+    <p>These are the pieces our customers love most — tried, tested, and truly adored:</p>
+
+    <div class="product-cards">
+      <div class="product-card">
+        <div class="product-card-img green">🕯️</div>
+        <div class="product-card-body">
+          <h4>Soy Wax Candles</h4>
+          <p>Hand-poured with calming scents like lavender vanilla and warm cedar. Clean-burning and long-lasting.</p>
+          <a href="https://www.etsy.com/shop/BloomNestHome" target="_blank">Shop Now →</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img rose">🌿</div>
+        <div class="product-card-body">
+          <h4>Dried Floral Arrangements</h4>
+          <p>Everlasting botanicals that bring natural beauty to any shelf, table, or windowsill.</p>
+          <a href="https://www.etsy.com/shop/BloomNestHome" target="_blank">Shop Now →</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img brown">🏺</div>
+        <div class="product-card-body">
+          <h4>Ceramic Vases</h4>
+          <p>Artisan-crafted in earthy tones — perfect companions for dried flowers or standing alone as sculpture.</p>
+          <a href="https://www.etsy.com/shop/BloomNestHome" target="_blank">Shop Now →</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img cream">🧺</div>
+        <div class="product-card-body">
+          <h4>Woven Storage Baskets</h4>
+          <p>Beautiful and practical — these natural fiber baskets organize any space with style.</p>
+          <a href="https://www.etsy.com/shop/BloomNestHome" target="_blank">Shop Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <h2>Why We Love What We Sell</h2>
+    <p>
+      We started BloomNestHome because we believe everyone deserves a home that feels like a sanctuary. Not just aesthetically beautiful, but emotionally nourishing — a space that supports rest, creativity, and joy.
+    </p>
+    <p>
+      Every item we carry was chosen because it passed our personal test: Does it make the room feel warmer? Does it bring a moment of quiet beauty to the everyday? Is it made with care and quality that will last?
+    </p>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="icon">✋</div>
+        <h4>Handpicked</h4>
+        <p>Every product is personally chosen and tested before it reaches our shop.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">🌱</div>
+        <h4>Sustainable</h4>
+        <p>We prioritize natural materials and eco-conscious production methods.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">💝</div>
+        <h4>Made with Love</h4>
+        <p>Many of our pieces come from small artisan makers who pour heart into their craft.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">⭐</div>
+        <h4>5-Star Quality</h4>
+        <p>Our customers rate us 5 stars — because we never compromise on quality.</p>
+      </div>
+    </div>
+
+    <h2>How to Style Our Favorites Together</h2>
+    <p>
+      The magic of our product collection is how beautifully each piece works with the others. A soy candle sitting beside a ceramic vase filled with dried lavender, placed on a woven tray — that's a vignette that stops you in your tracks every time you walk past it.
+    </p>
+
+    <h3>The Perfect Shelf Vignette</h3>
+    <p>
+      Try grouping our ceramic vase, a pillar candle, and a small dried floral bundle together on a bookshelf or side table. Vary the heights, let the textures play off each other, and add a small trailing plant or crystal for a finishing touch. Simple, beautiful, uniquely yours.
+    </p>
+
+    <h3>The Cozy Corner Setup</h3>
+    <p>
+      Place one of our larger woven baskets beside an armchair to hold throw blankets. Add a candle on the side table beside a stack of your favorite books. Tuck a small dried floral arrangement nearby. You've just created the coziest reading corner imaginable.
+    </p>
+
+    <div class="tip-box">
+      <p>💌 <strong>Custom orders welcome!</strong> Have a specific vision? We love creating custom bundles and gift sets. Message us on Etsy and let's create something beautiful together.</p>
+    </div>
+
+    <h2>Gift-Giving Made Beautiful</h2>
+    <p>
+      Our products make some of the most thoughtful, beautiful gifts — for housewarmings, birthdays, Mother's Day, or simply to show someone you care. We offer gift wrapping and can include a personalized note with any order.
+    </p>
+    <p>
+      There's something deeply meaningful about gifting someone a piece for their home. It's an invitation to slow down, to light a candle, to fill a vase with flowers, to make their space a little more beautiful. That's the gift of BloomNestHome.
+    </p>
+
+    <div class="cta-section">
+      <h2>Ready to Shop Our Favorites?</h2>
+      <p>Browse our full collection on Etsy and find the perfect pieces for your home.</p>
+      <a href="https://www.etsy.com/shop/BloomNestHome" target="_blank">Visit BloomNestHome on Etsy 🌸</a>
+    </div>
+
+    <div class="post-nav">
+      <a href="style-your-bookshelf.html">← Previous: Style Your Bookshelf</a>
+      <a href="../blog.html">All Articles →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>🌸 BloomNestHome</h3>
+        <p>Creating cozy spaces, one beautiful piece at a time.</p>
+        <a href="https://www.etsy.com/shop/BloomNestHome" target="_blank" class="footer-etsy-btn">Visit Our Etsy Shop</a>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 BloomNestHome · Made with 🌿 for cozy home lovers</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
