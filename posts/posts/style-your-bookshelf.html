@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How to Style Your Bookshelf Like a Pro | BloomNestHome</title>
+  <meta name="description" content="Learn how to style your bookshelf beautifully with these easy tips. Create a stunning display that reflects your personality and elevates your home decor."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    .post-hero {
+      background: linear-gradient(135deg, #FDF8F0 0%, #f5ede0 100%);
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+    .post-hero .category-badge {
+      display: inline-block;
+      background: #C9867C;
+      color: white;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .post-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: #6B4F3A;
+      max-width: 750px;
+      margin: 0 auto 20px;
+      line-height: 1.3;
+    }
+    .post-meta {
+      color: #999;
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+    .post-meta span { margin: 0 10px; }
+    .post-featured-img {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      background: linear-gradient(135deg, #8A9E7E, #6B4F3A);
+      border-radius: 16px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+    }
+    .post-content-wrap {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .post-content-wrap p {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: #555;
+      margin-bottom: 24px;
+    }
+    .post-content-wrap h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #6B4F3A;
+      margin: 50px 0 20px;
+    }
+    .post-content-wrap h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: #8A9E7E;
+      margin: 30px 0 12px;
+    }
+    .tip-box {
+      background: #FDF8F0;
+      border-left: 4px solid #8A9E7E;
+      padding: 24px 28px;
+      border-radius: 0 12px 12px 0;
+      margin: 36px 0;
+    }
+    .tip-box p { margin: 0; color: #6B4F3A; font-style: italic; }
+    .steps-list {
+      counter-reset: steps;
+      list-style: none;
+      padding: 0;
+      margin: 36px 0;
+    }
+    .steps-list li {
+      counter-increment: steps;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 28px;
+      padding: 24px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .steps-list li::before {
+      content: counter(steps);
+      background: #C9867C;
+      color: white;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .steps-list li div h4 {
+      font-family: 'Playfair Display', serif;
+      color: #6B4F3A;
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+    }
+    .steps-list li div p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #777;
+    }
+    .objects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 30px 0;
+    }
+    .object-tag {
+      background: #FDF8F0;
+      border: 1px solid #e8ddd0;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+    }
+    .object-tag .emoji { font-size: 1.8rem; display: block; margin-bottom: 6px; }
+    .object-tag span { font-size: 0.9rem; color: #6B4F3A; }
+    .post-nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 0 40px;
+      padding: 30px 0;
+      border-top: 1px solid #eee;
+    }
+    .post-nav a {
+      color: #8A9E7E;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.95rem;
+    }
+    .post-nav a:hover { color: #C9867C; }
+    .back-to-blog {
+      display: inline-block;
+      margin-bottom: 40px;
+      color: #8A9E7E;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.95rem;
+    }
+    .back-to-blog:hover { color: #C9867C; }
+    @media(max-width:600px){
+      .post-hero h1 { font-size: 1.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">🌸 BloomNestHome</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="https://www.etsy.com/shop/BloomNestHome" target="_blank" class="nav-etsy">Shop on Etsy</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="post-hero">
+    <span class="category-badge">Styling Tips</span>
+    <h1>How to Style Your Bookshelf Like a Pro</h1>
+    <div class="post-meta">
+      <span>🌿 By BloomNestHome</span>
+      <span>📅 February 2024</span>
+      <span>⏱ 5 min read</span>
+    </div>
+    <div class="post-featured-img">📚</div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <div class="post-content-wrap">
+    <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+
+    <p>
+      A beautifully styled bookshelf is one of the most impactful and personal statements you can make in your home. It's not just storage — it's a curated display of who you are, what you love, and how you see the world. The good news? You don't need a designer's eye or an unlimited budget to create a shelf that looks absolutely stunning.
+    </p>
+
+    <div class="tip-box">
+      <p>📚 <strong>Remember:</strong> The goal isn't a perfect bookshelf — it's a shelf that feels like <em>you</em>. Start with what you love and build from there.</p>
+    </div>
+
+    <h2>Step-by-Step: The BloomNestHome Bookshelf Method</h2>
+
+    <ol class="steps-list">
+      <li>
+        <div>
+          <h4>Start with a Clean Slate</h4>
+          <p>Remove everything from your shelf. Give it a good wipe down. Starting fresh helps you see the space with new eyes and prevents you from just rearranging the same clutter.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Sort & Edit Your Books</h4>
+          <p>Not every book needs to be on display. Keep your favorites, the ones you reference often, and those with beautiful covers. Store the rest in a basket or cupboard.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Group Books with Intention</h4>
+          <p>Arrange books both vertically and horizontally. Use horizontal stacks as platforms for small objects. Try organizing by color for a visually striking effect.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Add Decorative Objects</h4>
+          <p>Intersperse books with plants, candles, small sculptures, and personal mementos. The mix of books and objects is what makes a shelf feel alive.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Vary Heights & Depths</h4>
+          <p>Create visual interest by mixing tall and short items. Place some objects at the front of shelves, others further back. Depth adds dimension and keeps the eye moving.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Step Back & Adjust</h4>
+          <p>Take a photo of your shelf and look at it on your phone — this gives you fresh perspective. Move things around until it feels balanced but not rigid.</p>
+        </div>
+      </li>
+    </ol>
+
+    <h2>What to Put on Your Bookshelf</h2>
+    <p>Beyond books, these objects make beautiful shelf companions:</p>
+
+    <div class="objects-grid">
+      <div class="object-tag"><span class="emoji">🪴</span><span>Small Plants</span></div>
+      <div class="object-tag"><span class="emoji">🕯️</span><span>Candles</span></div>
+      <div class="object-tag"><span class="emoji">🏺</span><span>Ceramics</span></div>
+      <div class="object-tag"><span class="emoji">🖼️</span><span>Small Frames</span></div>
+      <div class="object-tag"><span class="emoji">🧺</span><span>Woven Baskets</span></div>
+      <div class="object-tag"><span class="emoji">🌿</span><span>Dried Florals</span></div>
+      <div class="object-tag"><span class="emoji">🪨</span><span>Crystals</span></div>
+      <div class="object-tag"><span class="emoji">🐚</span><span>Natural Objects</span></div>
+    </div>
+
+    <h2>The Color Rule for Beautiful Shelves</h2>
+    <p>
+      Color is one of the most powerful tools for creating a cohesive shelf. You have two main options: <strong>monochromatic</strong> (sticking to one color family for a serene, minimal look) or <strong>curated contrast</strong> (intentionally mixing 2–3 complementary colors for a more vibrant feel).
+    </p>
+    <p>
+      For a warm, cozy aesthetic, try grouping books in earthy tones — creams, tans, terracottas, and forest greens. Remove or turn around books with jarring covers that break the color story.
+    </p>
+
+    <h3>Try the "Rule of Three"</h3>
+    <p>
+      Group decorative objects in sets of three — varying in height, texture, and material. For example: a tall candle, a medium ceramic vase, and a small trailing plant. This classic design principle creates balance without feeling too symmetrical.
+    </p>
+
+    <h2>Common Bookshelf Mistakes to Avoid</h2>
+    <p>
+      <strong>Overstuffing:</strong> Resist the urge to fill every inch of space. Empty space — called "negative space" in design — gives the eye somewhere to rest and makes your displayed items feel more intentional.
+    </p>
+    <p>
+      <strong>All the same height:</strong> A shelf where everything is the same height feels flat and boring. Mix tall statement pieces with smaller items to create visual rhythm.
+    </p>
+    <p>
+      <strong>No personal touch:</strong> The most beautiful shelves tell a story. Include at least a few items that are meaningful to you — a souvenir from a trip, a gift from someone you love, or something you made yourself.
+    </p>
+
+    <div class="tip-box">
+      <p>🛍️ <strong>Find beautiful shelf decor</strong> in the <a href="https://www.etsy.com/shop/BloomNestHome" target="_blank" style="color:#C9867C;">BloomNestHome Etsy shop</a> — handpicked candles, ceramics, and more to elevate your display!</p>
+    </div>
+
+    <h2>Seasonal Refresh: Keep It Fresh</h2>
+    <p>
+      One of the joys of a beautifully styled shelf is that it can evolve with the seasons. Swap in dried autumn leaves and warm candles in fall. Add fresh greenery and lighter colors in spring. Rotate your displayed books as your reading tastes change. A living shelf never gets boring!
+    </p>
+    <p>
+      The most important thing? Enjoy the process. Styling a bookshelf is one of the most satisfying creative exercises in home decor. There's no right or wrong — only what makes you smile every time you walk past it. 📚✨
+    </p>
+
+    <div class="post-nav">
+      <a href="cozy-home-decor-trends.html">← Previous: Cozy Decor Trends</a>
+      <a href="bloom-nest-favorites.html">Next: Our Favorites →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>🌸 BloomNestHome</h3>
+        <p>Creating cozy spaces, one beautiful piece at a time.</p>
+        <a href="https://www.etsy.com/shop/BloomNestHome" target="_blank" class="footer-etsy-btn">Visit Our Etsy Shop</a>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 BloomNestHome · Made with 🌿 for cozy home lovers</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
